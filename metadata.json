@@ -1,0 +1,6 @@
+{
+  "name": "PATİ-KOD: Sokak Köpeği Beden Dili ve Güvenli İletişim Simülatörü",
+  "description": "Okullarda akıllı tahta ve çevrimdışı kullanıma uygun, Web Audio API ve interaktif SVG destekli sokak köpeği beden dili ve güvenli iletişim eğitim simülatörü.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
