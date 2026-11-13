@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PATİ-KOD: Görünmez Önyargı ve Güvenli İletişim | Sosyal Farkındalık ve Eğitim Portalı</title>
+  <meta name="description" content="Sokak hayvanlarına ve önyargıyla yaklaşılan köpek ırklarına (AmStaff / Pitbull vb.) karşı empati, bilimsel etoloji ve güvenli iletişim bilinci oluşturan sosyal farkındalık ve interaktif eğitim portalı." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ========================================================================
+       1. ÜST GEZİNME ÇUBUĞU (STICKY NAVBAR)
+       ======================================================================== -->
+  <header class="top-navbar">
+    <a href="#aboutHeroSection" class="brand-wrap">
+      <div class="brand-logo" aria-hidden="true">🐾</div>
+      <div class="brand-titles">
+        <h1>PATİ-KOD: Görünmez Önyargı ve Güvenli İletişim</h1>
+        <div class="brand-subtitle">
+          <span class="portal-badge-pill">Sosyal Farkındalık &amp; Eğitim Portalı</span>
+          <span>Bilimsel Hayvan Davranışları (Etoloji) &amp; Kamu Güvenliği Rehberi</span>
+        </div>
+      </div>
+    </a>
+
+    <nav class="nav-center-tabs" aria-label="Portal Bölümleri">
+      <a href="#aboutHeroSection" class="nav-tab-btn active">Proje Hakkında</a>
+      <a href="#bodyLanguageDictSection" class="nav-tab-btn">Beden Dili Sözlüğü</a>
+      <a href="#mythVsFactSection" class="nav-tab-btn">Önyargı vs. Gerçek</a>
+      <a href="#emergencyTimelineSection" class="nav-tab-btn">Acil Durum Rehberi</a>
+      <a href="#faqAccordionSection" class="nav-tab-btn">SSS</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button type="button" class="btn-icon-toggle js-toggle-sound" title="Web Audio API Ses Efektlerini Aç/Kapat">
+        🔊 Ses: Açık
+      </button>
+      <a href="#simulationSection" class="btn-start-sim-cta">
+        🎮 Simülasyonu Başlat
+      </a>
+      <a href="oyun.html" download="oyun.html" class="btn-download-game" title="Tek başına çalışan bağımsız oyun.html dosyasını bilgisayarına indir">
+        📥 Oyunu İndir (.HTML)
+      </a>
+    </div>
+  </header>
+
+  <main class="main-container">
+
+    <!-- ======================================================================
+         2. HERO (KARŞILAMA) ALANI VE 3 İSTATİSTİK SAYACI KARTI
+         ====================================================================== -->
+    <section class="portal-hero-section" id="aboutHeroSection" aria-label="Proje Hakkında ve Toplumsal İstatistikler">
+      <div class="portal-hero-grid">
+        <div>
+          <span class="hero-eyebrow">🐾 Toplumsal Fayda • Empati • Güvenli İletişim</span>
+          <h2 class="hero-main-title">
+            Korku Önyargıdan,<br />
+            <span>Güvenlik Doğru İletişimden</span> Doğar.
+          </h2>
+          <p class="hero-lead-text">
+            <strong>PATİ-KOD</strong>, hem çocuklarda hem de yetişkinlerde sokak hayvanlarının beden dili sinyallerini doğru okuma becerisi kazandırmak ve özellikle <strong>AmStaff / Pitbull</strong> gibi dış görünüşü nedeniyle önyargıyla yaklaşılan ırklara karşı bilimsel etoloji temelli bir empati köprüsü kurmak için geliştirilmiş interaktif bir eğitim portalıdır.
+          </p>
+          <div class="hero-cta-row">
+            <a href="#simulationSection" class="btn-start-sim-cta" style="padding:12px 22px; font-size:0.95rem;">
+              🎮 İnteraktif Simülasyonu Başlat
+            </a>
+            <a href="oyun.html" class="btn-fullscreen" style="padding:12px 18px; font-size:0.9rem;">
+              🕹️ Tam Ekran Oyun Sayfası (oyun.html)
+            </a>
+            <a href="oyun.html" download="oyun.html" class="btn-download-game" style="padding:12px 18px; font-size:0.9rem;">
+              📥 Bağımsız Oyunu İndir (oyun.html)
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual-card">
+          <img id="portalHeroImg" src="assets/images/hero_amstaff_rain.jpg" alt="Yağmurlu sokakta su birikintisine bakan AmStaff Tarçın" />
+          <div class="hero-visual-caption">
+            💬 <strong>Hikayemizin Kahramanı Tarçın (AmStaff):</strong> Yağmurlu bir sokakta herkesin korkuyla kaldırım değiştirdiği, oysa beden diliyle sadece <em>"Bana alan tanı ve beni anla"</em> diyen bir can dostu.
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 İstatistik Sayacı Kartı -->
+      <div class="hero-stats-grid" aria-label="Toplumsal Sorunun Boyutunu Gösteren İstatistikler">
+        <div class="stat-counter-card">
+          <div class="stat-icon-badge" style="background:rgba(244,63,94,0.18); border:1px solid #f43f5e;">📊</div>
+          <div>
+            <div class="stat-number" style="color:#fb7185;">%75</div>
+            <p class="stat-desc">
+              <strong>İletişim Kazası Nedeni:</strong> Isırılma vakalarının <strong>%75'i</strong> köpeğin önceden verdiği stres ve uyarı beden dili sinyallerini yanlış okumaktan kaynaklanır.
+            </p>
+          </div>
+        </div>
+
+        <div class="stat-counter-card">
+          <div class="stat-icon-badge" style="background:rgba(16,185,129,0.18); border:1px solid #10b981;">🛡️</div>
+          <div>
+            <div class="stat-number" style="color:#34d399;">%80</div>
+            <p class="stat-desc">
+              <strong>Eğitimin Koruyucu Gücü:</strong> Stres sinyallerini tanıyan ve <em>"Ağaç Olma"</em> tekniğini bilen çocuklarda ısırılma ve kaza riski <strong>%80 oranında</strong> azalır.
+            </p>
+          </div>
+        </div>
+
+        <div class="stat-counter-card">
+          <div class="stat-icon-badge" style="background:rgba(245,158,11,0.18); border:1px solid #f59e0b;">🏠</div>
+          <div>
+            <div class="stat-number" style="color:#fbbf24;">3 Kat</div>
+            <p class="stat-desc">
+              <strong>Görünmez Önyargı Maliyeti:</strong> AmStaff ve Pitbull gibi ırklar, salt fiziksel görünüm önyargısı nedeniyle barınaklarda sahiplenilmek için <strong>3 kat daha uzun</strong> süre bekler.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         3. İNTERAKTİF OYUN & SİMÜLASYON ALANI (GAMIFIED HUD)
+         ====================================================================== -->
+    <section id="simulationSection" style="scroll-margin-top: 84px;">
+      <div class="section-portal-header">
+        <span class="section-eyebrow-pill">🎮 Çift Perspektifli İnteraktif Deneyim</span>
+        <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px;">
+          <div>
+            <h2 style="font-size:1.55rem; font-weight:900; color:#fff;">Canlı Empati ve Güvenli İletişim Simülatörü</h2>
+            <p style="font-size:0.88rem; color:#94a3b8;">
+              4 aşamalı simülasyonda Tarçın'ın sinyallerini çöz, kriz anında doğru duruşu seç ve dünyaya onun gözünden bak.
+            </p>
+          </div>
+          <div style="display:flex; gap:8px;">
+            <button type="button" class="btn-icon-toggle js-toggle-rain">🌧️ Yağmur Sesi</button>
+            <button type="button" class="btn-fullscreen js-fullscreen-btn">⛶ Simülasyonu Tam Ekran Yap</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="game-shell" id="patiGameShell" aria-label="PATİ-KOD İnteraktif Oyun HUD Alanı">
+        <!-- Canlı HUD Üst Barı -->
+        <div class="hud-top-bar">
+          <!-- Köpek Güven & Stres Barları -->
+          <div class="hud-calm-box">
+            <div class="calm-header">
+              <div class="calm-label">
+                <span>🐕 Durum:</span>
+                <span class="calm-status-pill" id="hudCalmStatus">Tedirgin / Gözlemliyor</span>
+              </div>
+              <div class="bpm-indicator" title="Köpeğin Anlık Kalp Atım Hızı">
+                <span class="heart-pulse-icon">❤️</span>
+                <span id="hudBpmValue">110 BPM</span>
+              </div>
+            </div>
+            <div class="calm-bars-dual">
+              <div>
+                <div class="bar-col-label">
+                  <span>💚 Güven &amp; Sakinlik</span>
+                  <strong id="hudCalmPercent" style="color:#34d399;">%45</strong>
+                </div>
+                <div class="calm-bar-track">
+                  <div class="calm-bar-fill" id="hudCalmFill"></div>
+                </div>
+              </div>
+              <div>
+                <div class="bar-col-label">
+                  <span>🚨 Stres Barı (%100=Biter)</span>
+                  <strong id="hudStressPercent" style="color:#fb7185;">%55</strong>
+                </div>
+                <div class="calm-bar-track">
+                  <div class="stress-bar-fill" id="hudStressFill"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Empati ve Güvenlik Skorları -->
+          <div class="hud-scores-box">
+            <div class="score-tile score-empathy">
+              <span class="score-tile-label">💖 Empati Skoru</span>
+              <span class="score-tile-val" id="scoreEmpathy">100</span>
+            </div>
+            <div class="score-tile score-safety">
+              <span class="score-tile-label">🛡️ Güvenlik Skoru</span>
+              <span class="score-tile-val" id="scoreSafety">100</span>
+            </div>
+            <div class="score-tile score-total">
+              <span class="score-tile-label">⭐ PATİ-KOD Puanı</span>
+              <span class="score-tile-val" id="scoreTotal">200</span>
+            </div>
+          </div>
+
+          <!-- Kazanılan Rozet Envanteri -->
+          <div class="hud-badges-box">
+            <div class="badges-title">
+              🏅 ROZET<br />ENVANTERİ<br />
+              <span style="font-size:0.65rem; color:#38bdf8;">(Detay için tıkla)</span>
+            </div>
+            <div class="badges-slots" id="hudBadgeSlots"></div>
+          </div>
+        </div>
+
+        <!-- 4 Aşamalı Oynanış Bölüm Seçici (Stepper) -->
+        <div class="chapter-stepper" role="tablist" aria-label="Oyun Bölümleri">
+          <button type="button" class="step-btn active" data-chapter="0">
+            🌧️ Giriş: Yağmurlu Sokak (Hero)
+          </button>
+          <button type="button" class="step-btn" data-chapter="1">
+            🔍 Bölüm 1: Beden Dili Dedektifi
+          </button>
+          <button type="button" class="step-btn" data-chapter="2">
+            🌳 Bölüm 2: Krizde 'Ağaç Olmak'
+          </button>
+          <button type="button" class="step-btn" data-chapter="3">
+            🔊 Bölüm 3: Ses Frekansı &amp; Kavis
+          </button>
+          <button type="button" class="step-btn" data-chapter="4">
+            🪞 Bölüm 4: Empati Aynası (Final)
+          </button>
+        </div>
+
+        <!-- Sahne Görünümü & Etkileşim Paneli -->
+        <div class="stage-grid">
+          <div class="scene-viewport" id="sceneViewport">
+            <div class="scene-top-overlay">
+              <div class="scene-badge-tag" id="sceneTagLeft">
+                🌧️ <strong>Ana Sahne:</strong> Yağmurlu Sokak &amp; Görünmez Önyargı
+              </div>
+              <div class="scene-badge-tag" id="sceneTagRight">
+                🐾 Karakter: <strong>Tarçın (AmStaff)</strong>
+              </div>
+            </div>
+
+            <img
+              id="sceneMainImg"
+              class="scene-img"
+              src="assets/images/hero_amstaff_rain.jpg"
+              alt="PATİ-KOD İnteraktif Oyun Sahnesi"
+            />
+            <canvas id="sceneFxCanvas" class="scene-fx-canvas"></canvas>
+            <div id="sceneInteractiveLayer" class="scene-interactive-layer"></div>
+          </div>
+
+          <aside class="interaction-sidebar" id="interactionSidebar"></aside>
+        </div>
+
+        <!-- Alt: AI Veteriner & Davranış Koçu Paneli -->
+        <div class="ai-coach-panel">
+          <div class="ai-avatar-box" id="aiAvatarContainer" title="Dr. Pati - Yapay Zeka Etolog & Veteriner Davranış Koçu"></div>
+
+          <div class="ai-dialogue-content">
+            <div class="ai-speaker-row">
+              <span class="ai-speaker-name">🩺 AI Veteriner &amp; Davranış Koçu (Dr. Pati)</span>
+              <span class="ai-science-tag" id="aiScienceTag">🧬 Klinik Hayvan Davranışları (Etoloji) Analizi</span>
+            </div>
+            <div class="ai-typewriter-text" id="aiTypewriterText">
+              Merhaba! Ben Dr. Pati. Sokak hayvanlarının beden dilini bilimsel verilerle çözmek için yanındayım.
+            </div>
+          </div>
+
+          <div class="ai-quick-chips" aria-label="AI Koça Hızlı Bilimsel Sorular">
+            <button type="button" class="ai-chip-btn" data-ai-faq="whale">❓ Whale Eye (Göz Akı) nedir?</button>
+            <button type="button" class="ai-chip-btn" data-ai-faq="amstaff">❓ AmStaff / Pitbull neden yanlış anlaşılır?</button>
+            <button type="button" class="ai-chip-btn" data-ai-faq="tree">❓ Neden 'Ağaç Olmak' hayat kurtarır?</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         4. İNTERAKTİF 'KÖPEK BEDEN DİLİ SÖZLÜĞÜ' (6 KARTLIK GÖRSEL REHBER)
+         ====================================================================== -->
+    <section class="showcase-section" id="bodyLanguageDictSection" style="scroll-margin-top: 84px;">
+      <div class="section-header-row">
+        <div>
+          <span class="section-eyebrow-pill">📖 Görsel Etoloji Rehberi • 6 Temel Sinyal</span>
+          <h2>İnteraktif Köpek Beden Dili Sözlüğü</h2>
+          <p style="font-size:0.88rem; color:#94a3b8; margin-top:4px;">
+            Kartların üzerine geldiğinde (hover) ilgili beden dili sinyalinin <strong>Güvenli mi yoksa Uyarı mı</strong> olduğunu gösteren sinyal etiketlerini inceleyebilirsin.
+          </p>
+        </div>
+      </div>
+
+      <div class="dict-grid">
+        <!-- 1. Whale Eye -->
+        <article class="dict-card signal-warning">
+          <div class="dict-top-row">
+            <div class="dict-svg-icon" data-dict-svg="whaleEye"></div>
+            <div>
+              <div class="dict-subtitle">Göz &amp; Bakış Sinyali</div>
+              <h3 class="dict-title">1. Whale Eye (Hilal Göz / Göz Akı)</h3>
+            </div>
+          </div>
+          <p class="dict-desc">
+            Köpeğin başını hafifçe başka yöne çevirirken gözlerini senden ayırmaması sonucu göz akının (sklera) yarım ay şeklinde görünmesidir. Yoğun huzursuzluk, kaygı ve <strong>"Kişisel alanıma girme"</strong> mesajıdır.
+          </p>
+          <div class="dict-hover-badge badge-warning">
+            <span>⚠️ UYARI SİNYALİ (Yüksek Stres)</span>
+            <span>Mesafeni Koru &amp; El Uzatma</span>
+          </div>
+        </article>
+
+        <!-- 2. Kulakların Geriye Yatması -->
+        <article class="dict-card signal-warning">
+          <div class="dict-top-row">
+            <div class="dict-svg-icon" data-dict-svg="ears"></div>
+            <div>
+              <div class="dict-subtitle">Kulak Postürü</div>
+              <h3 class="dict-title">2. Kulakların Geriye Yatması</h3>
+            </div>
+          </div>
+          <p class="dict-desc">
+            Kulakların kafatasına doğru geriye yapıştırılması (Pinned Ears), çoğu zaman yanlışlıkla saldırganlık sanılır. Oysa köpeğin korktuğunu, çekindiğini ve kendisini küçülterek çatışmadan kaçınmak istediğini gösterir.
+          </p>
+          <div class="dict-hover-badge badge-warning">
+            <span>⚠️ UYARI SİNYALİ (Korku &amp; Kaygı)</span>
+            <span>Üzerine Eğilme, Alan Tanı</span>
+          </div>
+        </article>
+
+        <!-- 3. Stres Esnemesi ve Burun Yalama -->
+        <article class="dict-card signal-caution">
+          <div class="dict-top-row">
+            <div class="dict-svg-icon" data-dict-svg="noseLick"></div>
+            <div>
+              <div class="dict-subtitle">Turid Rugaas • Sakinleştirici Sinyal</div>
+              <h3 class="dict-title">3. Stres Esnemesi &amp; Burun Yalama</h3>
+            </div>
+          </div>
+          <p class="dict-desc">
+            Köpeğin uykusu olmadığı halde derin esnemesi veya aç olmadığı halde burnunun ucunu hızlıca yalaması birer <strong>Yatıştırıcı Sinyaldir (Calming Signal)</strong>. Hem kendi stresini düşürmeye hem de sana barışçıl olduğunu anlatmaya çalışır.
+          </p>
+          <div class="dict-hover-badge badge-caution">
+            <span>🟡 DİKKAT / YATIŞTIRMA SİNYALİ</span>
+            <span>Sakin Kal &amp; Göz Temasını Yumuşat</span>
+          </div>
+        </article>
+
+        <!-- 4. Oyun Selamı (Play Bow) -->
+        <article class="dict-card signal-safe">
+          <div class="dict-top-row">
+            <div class="dict-svg-icon" data-dict-svg="playBow"></div>
+            <div>
+              <div class="dict-subtitle">Pozitif Sosyal Davet</div>
+              <h3 class="dict-title">4. Oyun Selamı (Play Bow)</h3>
+            </div>
+          </div>
+          <p class="dict-desc">
+            Ön bacakların ve göğsün yere paralel şekilde eğildiği, arka kısmın ve sallanan kuyruğun havada kaldığı neşeli duruştur. Köpek dünyasında <strong>"Bundan sonra yapacağım hareketler kavga değil, oyundur!"</strong> demektir.
+          </p>
+          <div class="dict-hover-badge badge-safe">
+            <span>💚 GÜVENLİ SİNYAL (Dostça Davet)</span>
+            <span>Barışçıl &amp; Neşeli İletişim</span>
+          </div>
+        </article>
+
+        <!-- 5. Kuyruk Pozisyonları -->
+        <article class="dict-card signal-caution">
+          <div class="dict-top-row">
+            <div class="dict-svg-icon" data-dict-svg="tailPositions"></div>
+            <div>
+              <div class="dict-subtitle">Duygusal Barometre</div>
+              <h3 class="dict-title">5. Kuyruk Pozisyonları (Dik vs. Rahat)</h3>
+            </div>
+          </div>
+          <p class="dict-desc">
+            Yumuşak ve geniş açıyla sallanan nötr kuyruk rahatlığı gösterirken; <strong>bayrak direği gibi dimdik, kaskatı ve dar açıyla titreşen kuyruk</strong> yüksek uyarılmışlık ve olası savunma/meydan okuma uyarısıdır.
+          </p>
+          <div class="dict-hover-badge badge-caution">
+            <span>🟡 DİKKAT • Dik/Kaskatı: Uyarı | Rahat: Güvenli</span>
+            <span>Bedenin Bütününü Oku</span>
+          </div>
+        </article>
+
+        <!-- 6. Sırt Tüylerinin Kabarması (Piloereksiyon) -->
+        <article class="dict-card signal-warning">
+          <div class="dict-top-row">
+            <div class="dict-svg-icon" data-dict-svg="piloerection"></div>
+            <div>
+              <div class="dict-subtitle">Otonom Sinir Sistemi Tepkisi</div>
+              <h3 class="dict-title">6. Sırt Tüylerinin Kabarması (Piloereksiyon)</h3>
+            </div>
+          </div>
+          <p class="dict-desc">
+            Ense ve sırt hattı boyunca tüylerin dikleşmesi (Hackles), tıpkı insanlarda tüylerin diken diken olması gibi istemsiz bir adrenalin tepkisidir. Köpeğin yoğun korku, şaşkınlık veya yüksek stres altında olduğunu bildirir.
+          </p>
+          <div class="dict-hover-badge badge-warning">
+            <span>🚨 KRİTİK UYARI (Yüksek Uyarılma)</span>
+            <span>Yaklaşma, Dur ve Kavis Çiz</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         5. 'GÖRÜNMEZ ÖNYARGI: EFSANELER VE BİLİMSEL GERÇEKLER' (4 FLIP CARD)
+         ====================================================================== -->
+    <section class="showcase-section" id="mythVsFactSection" style="scroll-margin-top: 84px;">
+      <div class="section-header-row">
+        <div>
+          <span class="section-eyebrow-pill">🔄 İnteraktif Dönen Kartlar (Flip Cards)</span>
+          <h2>Görünmez Önyargı: Efsaneler ve Bilimsel Gerçekler</h2>
+          <p style="font-size:0.88rem; color:#94a3b8; margin-top:4px;">
+            Toplumda doğru sanılan tehlikeli yanlışları ve ırk önyargılarını kırmak için kartların <strong>üzerine gelin veya tıklayın</strong>.
+          </p>
+        </div>
+      </div>
+
+      <div class="flip-cards-grid">
+        <!-- Flip Card 1 -->
+        <div class="flip-card" tabindex="0" role="button" aria-label="Önyargı 1 Kartını Çevir">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div>
+                <span class="flip-tag-myth">❌ Toplumsal Önyargı #1</span>
+                <p class="flip-quote-text">
+                  "Kuyruk sallayan her köpek mutludur ve sevilmek istiyordur."
+                </p>
+              </div>
+              <div class="flip-hint-footer">
+                <span>🔍 Etolojik Gerçek Nedir?</span>
+                <strong style="color:#fda4af;">Çevir ↻</strong>
+              </div>
+            </div>
+            <div class="flip-card-back">
+              <div>
+                <span class="flip-tag-truth">✅ Bilimsel Gerçek</span>
+                <p class="flip-truth-text">
+                  Hayır! Kaskatı ve hızlı sallanan dik bir kuyruk yüksek uyarılmışlık ve tehdit sinyali olabilir. Kuyruk sallama sadece "duygusal uyarılma" göstergesidir; mutluluk için tüm vücudun gevşek olması gerekir.
+                </p>
+              </div>
+              <div class="flip-hint-footer" style="color:#a7f3d0;">
+                <span>📚 Kaynak: Kanid Davranış Bilimi</span>
+                <strong>✓ Doğrulandı</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Flip Card 2 -->
+        <div class="flip-card" tabindex="0" role="button" aria-label="Önyargı 2 Kartını Çevir">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div>
+                <span class="flip-tag-myth">❌ Toplumsal Önyargı #2</span>
+                <p class="flip-quote-text">
+                  "Bazı köpek ırklarının (AmStaff / Pitbull) çenesi kilitlenir, doğuştan saldırgandır."
+                </p>
+              </div>
+              <div class="flip-hint-footer">
+                <span>🔍 Anatomik Gerçek Nedir?</span>
+                <strong style="color:#fda4af;">Çevir ↻</strong>
+              </div>
+            </div>
+            <div class="flip-card-back">
+              <div>
+                <span class="flip-tag-truth">✅ Bilimsel Gerçek</span>
+                <p class="flip-truth-text">
+                  Hiçbir köpek ırkının çenesinde anatomik bir kilit mekanizması yoktur; davranışın temel belirleyicisi ırk değil, yetiştirilme şartları, sosyalleşme ve doğru iletişimdir.
+                </p>
+              </div>
+              <div class="flip-hint-footer" style="color:#a7f3d0;">
+                <span>📚 Kaynak: Veteriner Anatomi &amp; AVMA</span>
+                <strong>✓ Doğrulandı</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Flip Card 3 -->
+        <div class="flip-card" tabindex="0" role="button" aria-label="Önyargı 3 Kartını Çevir">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div>
+                <span class="flip-tag-myth">❌ Toplumsal Önyargı #3</span>
+                <p class="flip-quote-text">
+                  "Bize havlayan bir köpekten kurtulmak için hızla koşarak kaçmalıyız."
+                </p>
+              </div>
+              <div class="flip-hint-footer">
+                <span>🔍 Güvenli Refleks Nedir?</span>
+                <strong style="color:#fda4af;">Çevir ↻</strong>
+              </div>
+            </div>
+            <div class="flip-card-back">
+              <div>
+                <span class="flip-tag-truth">✅ Bilimsel Gerçek</span>
+                <p class="flip-truth-text">
+                  Koşmak köpeğin içgüdüsel takip/avlanma dürtüsünü (Prey Drive) tetikler. En güvenli yöntem olduğu yerde durup kolları birleştirerek <strong>Ağaç Olmaktır</strong>.
+                </p>
+              </div>
+              <div class="flip-hint-footer" style="color:#a7f3d0;">
+                <span>📚 Kaynak: Doggone Safe Protokolü</span>
+                <strong>✓ Doğrulandı</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Flip Card 4 -->
+        <div class="flip-card" tabindex="0" role="button" aria-label="Önyargı 4 Kartını Çevir">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div>
+                <span class="flip-tag-myth">❌ Toplumsal Önyargı #4</span>
+                <p class="flip-quote-text">
+                  "Köpeğin gözlerinin içine dik dik bakmak ona kimin patron olduğunu gösterir."
+                </p>
+              </div>
+              <div class="flip-hint-footer">
+                <span>🔍 Etolojik Gerçek Nedir?</span>
+                <strong style="color:#fda4af;">Çevir ↻</strong>
+              </div>
+            </div>
+            <div class="flip-card-back">
+              <div>
+                <span class="flip-tag-truth">✅ Bilimsel Gerçek</span>
+                <p class="flip-truth-text">
+                  Köpek dünyasında doğrudan ve sabit göz teması açık bir meydan okuma ve tehdit olarak algılanır. Güven vermek için bakışları yumuşatıp başı hafifçe yana çevirmek gerekir.
+                </p>
+              </div>
+              <div class="flip-hint-footer" style="color:#a7f3d0;">
+                <span>📚 Kaynak: Turid Rugaas Etoloji</span>
+                <strong>✓ Doğrulandı</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         6. 'SOKAKTA 3 ADIMDA GÜVENLİ İLETİŞİM' İNFOGRAFİK ZAMAN ÇİZELGESİ
+         ====================================================================== -->
+    <section class="showcase-section" id="emergencyTimelineSection" style="scroll-margin-top: 84px;">
+      <div class="section-header-row">
+        <div>
+          <span class="section-eyebrow-pill">🛡️ Acil Durum &amp; Kamu Güvenliği Rehberi</span>
+          <h2>Sokakta 3 Adımda Güvenli İletişim İnfografiği</h2>
+          <p style="font-size:0.88rem; color:#94a3b8; margin-top:4px;">
+            Çocukların ve yetişkinlerin sokakta gergin veya heyecanlı bir köpekle karşılaştığında uygulaması gereken 3 altın adım:
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-infographic-grid">
+        <!-- Adım 1: DUR (Ağaç Ol) -->
+        <div class="timeline-step-card">
+          <div class="timeline-step-header">
+            <div class="timeline-step-number">1</div>
+            <div class="timeline-step-icon" data-badge-svg="tree"></div>
+          </div>
+          <h3 class="timeline-step-title">Adım 1: DUR (Ağaç Ol)</h3>
+          <p class="timeline-step-desc">
+            Üzerine doğru koşan veya havlayan bir köpek gördüğünde <strong>asla koşma ve çığlık atma</strong>. Ayaklarını yan yana birleştir, kollarını göğsünde kenetle ve kök salmış bir ağaç gibi hareketsiz kal.
+          </p>
+          <div class="timeline-do-dont">
+            <div style="color:#34d399; font-weight:700;">✅ Yap: Sabit dur, ellerini göğsünde sakla.</div>
+            <div style="color:#fb7185; font-weight:700; margin-top:3px;">❌ Yapma: Koşarak kaçma, kollarını havada sallama.</div>
+          </div>
+        </div>
+
+        <!-- Adım 2: YAN DÖN (Göz Temasını Kes) -->
+        <div class="timeline-step-card">
+          <div class="timeline-step-header">
+            <div class="timeline-step-number">2</div>
+            <div class="timeline-step-icon" data-badge-svg="empathy"></div>
+          </div>
+          <h3 class="timeline-step-title">Adım 2: YAN DÖN (Göz Temasını Kes)</h3>
+          <p class="timeline-step-desc">
+            Köpeğin gözlerinin içine dik dik bakmak meydan okumadır. Vücudunu hafifçe <strong>yan профиle çevir</strong>, başını hafifçe eğerek yere veya kendi ayaklarına bak ve <strong>düşük frekanslı sakin bir sesle</strong> nefes al.
+          </p>
+          <div class="timeline-do-dont">
+            <div style="color:#34d399; font-weight:700;">✅ Yap: Bakışını yumuşat, yan profil duruşuna geç.</div>
+            <div style="color:#fb7185; font-weight:700; margin-top:3px;">❌ Yapma: Gözlerinin içine dik bakma, üstüne eğilme.</div>
+          </div>
+        </div>
+
+        <!-- Adım 3: KAVİS ÇİZ (Kişisel Alanına Saygı Duy) -->
+        <div class="timeline-step-card">
+          <div class="timeline-step-header">
+            <div class="timeline-step-number">3</div>
+            <div class="timeline-step-icon" data-badge-svg="arc"></div>
+          </div>
+          <h3 class="timeline-step-title">Adım 3: KAVİS ÇİZ (Alanına Saygı Duy)</h3>
+          <p class="timeline-step-desc">
+            Köpek koklayıp ilgisini kaybettiğinde veya yerde yemek/oyuncak koruyorsa, üzerine doğrudan yürümek yerine <strong>geniş bir yay (kavis) çizerek</strong> yavaş ve kararlı adımlarla bölgeden uzaklaş.
+          </p>
+          <div class="timeline-do-dont">
+            <div style="color:#34d399; font-weight:700;">✅ Yap: Geniş bir kavisle (50°–75°) yavaşça uzaklaş.</div>
+            <div style="color:#fb7185; font-weight:700; margin-top:3px;">❌ Yapma: Mama kabına veya köpeğe dik açıyla yürüme.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         7. SIKÇA SORULAN SORULAR (SSS - AKORDEON MENÜ)
+         ====================================================================== -->
+    <section class="showcase-section" id="faqAccordionSection" style="scroll-margin-top: 84px;">
+      <div class="section-header-row">
+        <div>
+          <span class="section-eyebrow-pill">❓ Hızlı Öz-Değerlendirme &amp; Rehber</span>
+          <h2>Sıkça Sorulan Sorular (SSS)</h2>
+          <p style="font-size:0.88rem; color:#94a3b8; margin-top:4px;">
+            Günlük hayatta sokak hayvanlarıyla karşılaşmalarda en çok merak edilen pratik güvenlik soruları ve bilimsel yanıtları:
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-accordion-list">
+        <div class="faq-item open">
+          <button type="button" class="faq-question-btn">
+            <span>1. Yemek yiyen veya mama kabının başında bekleyen bir köpeğin yanından nasıl geçilir?</span>
+            <span class="faq-toggle-icon">+</span>
+          </button>
+          <div class="faq-answer-panel">
+            Yemek, kemik veya yavrusunu bekleyen bir köpek <strong>Kaynak Koruma (Resource Guarding)</strong> içgüdüsüyle hareket eder. Bu durumda köpeğin üzerine doğrudan (dik açıyla) yürümek, kaynağını elinden alacağınız yönünde tehdit algısı oluşturur. Yapılması gereken; köpekle göz teması kurmadan, el uzatmadan, <strong>geniş bir kavis (yay) çizerek</strong> ve sakin/sabit bir yürüyüş temposuyla koruma çemberinin dışından geçmektir.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button type="button" class="faq-question-btn">
+            <span>2. Bisiklet, scooter veya kaykay sürerken bir köpek kovalarsa ne yapılmalı?</span>
+            <span class="faq-toggle-icon">+</span>
+          </button>
+          <div class="faq-answer-panel">
+            Hızla dönen tekerlekler ve kaçan araçlar köpeklerin <strong>Av ve Takip İçgüdüsünü (Prey Drive)</strong> en güçlü şekilde tetikleyen uyarandır. Daha hızlı pedal çevirmeye çalışmak hem kaza riskini artırır hem de köpeğin heyecanını körükler. En güvenli yöntem; <strong>yavaşlayıp durmak, araçtan sakince inmek ve bisikleti/scooter'ı kendiniz ile köpek arasında güvenli bir bariyer olacak şekilde tutarak</strong> köpek sakinleşene kadar sabit beklemektir.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button type="button" class="faq-question-btn">
+            <span>3. AmStaff ve Pitbull gibi ırklardan neden bu kadar korkuluyor? Gerçekten doğuştan saldırgan mıdır?</span>
+            <span class="faq-toggle-icon">+</span>
+          </button>
+          <div class="faq-answer-panel">
+            Amerikan Veteriner Hekimler Birliği (AVMA) ve etoloji araştırmaları, hiçbir köpek ırkının doğuştan "kötü" veya "otomatik saldırgan" olmadığını, ayrıca halk arasında söylenen <em>"çene kilitlenmesi"</em> gibi bir anatomik yapının hiçbir köpekte bulunmadığını ortaya koymaktadır. Bu ırklar güçlü kas yapıları nedeniyle kötü niyetli kişilerce yanlış yetiştirildiklerinde haberlere konu olmakta; bu da masum ve sevgi dolu binlerce köpeğin <strong>görünmez önyargı</strong> kurbanı olmasına yol açmaktadır.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button type="button" class="faq-question-btn">
+            <span>4. Tanımadığımız ama sakin görünen bir köpekle nasıl güvenli selamlaşılır?</span>
+            <span class="faq-toggle-icon">+</span>
+          </button>
+          <div class="faq-answer-panel">
+            Öncelikle köpeğin kulaklarının geride olmadığından, göz akının (Whale Eye) görünmediğinden ve vücudunun kaskatı olmadığından emin olun. Asla doğrudan üstüne eğilmeyin ve elinizi başının tepesine uzatmayın. Bunun yerine yan dönerek çömelin, köpeğin kendi isteğiyle size yaklaşmasına izin verin. Yanınıza gelip kokladıktan sonra başının üstünü değil, çene altını veya göğüs yanını nazikçe sevin.
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================================
+       8. AKADEMİK ALTBİLGİ (FOOTER) VE BAĞIMSIZ OYUN BAĞLANTISI
+       ======================================================================== -->
+  <footer class="portal-footer" id="portalFooter">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <span class="footer-academic-badge">🎓 Akademik Künye &amp; Toplumsal Fayda Bildirimi</span>
+        <h4>PATİ-KOD: Görünmez Önyargı ve Güvenli İletişim</h4>
+        <p style="font-size:0.85rem; color:#94a3b8; line-height:1.6;">
+          Bu interaktif eğitim portalı ve simülasyon oyunu, <strong>'Yapay Zeka ve Tasarım'</strong> dersi kapsamında çocuklarda ve yetişkinlerde sokak hayvanlarına yönelik <strong>toplumsal fayda, empati ve kamu güvenliği</strong> bilinci oluşturmak amacıyla sıfırdan geliştirilmiştir.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Portal Bölümleri</h4>
+        <ul class="footer-links">
+          <li><a href="#aboutHeroSection">• Proje Hakkında &amp; İstatistikler</a></li>
+          <li><a href="#simulationSection">• 4 Aşamalı İnteraktif Simülasyon</a></li>
+          <li><a href="#bodyLanguageDictSection">• Köpek Beden Dili Sözlüğü (6 Sinyal)</a></li>
+          <li><a href="#mythVsFactSection">• Önyargı vs. Bilimsel Gerçekler</a></li>
+          <li><a href="#emergencyTimelineSection">• Sokakta 3 Adımda Güvenli İletişim</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Bağımsız Tam Ekran Oyun Modu</h4>
+        <p style="font-size:0.83rem; color:#94a3b8; margin-bottom:12px;">
+          Sadece oyun ekranını içeren, menüsüz ve tam ekran bağımsız simülasyon sayfasını açın veya tek dosya olarak bilgisayara indirin:
+        </p>
+        <div style="display:flex; flex-direction:column; gap:8px;">
+          <a href="oyun.html" class="btn-start-sim-cta" style="width:100%; justify-content:center;">
+            🕹️ Tam Ekran Oyun Sayfasını Aç (oyun.html)
+          </a>
+          <a href="oyun.html" download="oyun.html" class="btn-download-game" style="width:100%; justify-content:center;">
+            📥 Bağımsız Oyunu İndir (oyun.html)
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom-bar">
+      <span>© 2026 PATİ-KOD • Yapay Zeka ve Tasarım Dersi Kamu Güvenliği ve Empati Projesi</span>
+      <span>Bilimsel Referanslar: Turid Rugaas (Calming Signals) • Dr. Sophia Yin • Doggone Safe</span>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       9. OYUN BİTTİ / İLETİŞİM KAZASI (GAME OVER) EKRANI
+       ======================================================================== -->
+  <div class="modal-backdrop" id="gameOverModalBackdrop" role="dialog" aria-modal="true" aria-labelledby="gameOverModalTitle">
+    <div class="gameover-modal">
+      <div class="gameover-badge">🚨 İletişim Kazası • Köpek Stres Barı %100</div>
+      <h2 class="gameover-title" id="gameOverModalTitle">Oyun Bitti (Game Over)</h2>
+      <p style="font-size:0.88rem; color:#fecdd3;">
+        Yaptığın hatalı hamle nedeniyle köpeğin stres seviyesi kritik eşiğe ulaştı ve güvenli iletişim koptu!
+      </p>
+
+      <div class="gameover-stress-banner">
+        <div style="display:flex; justify-content:space-between; font-size:0.78rem; font-weight:800; color:#fda4af; margin-bottom:5px;">
+          <span>⚠️ YAPILAN HATA: <strong id="gameOverMistakeTitle" style="color:#fff;">Yanlış Fiziksel Yaklaşım</strong></span>
+          <span>STRES: %100</span>
+        </div>
+        <div class="calm-bar-track">
+          <div class="stress-bar-fill" style="width:100%;"></div>
+        </div>
+      </div>
+
+      <div class="gameover-ai-box">
+        <div class="gameover-ai-avatar" id="gameOverAiAvatar"></div>
+        <div>
+          <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap; margin-bottom:4px;">
+            <span style="font-size:0.82rem; font-weight:800; color:#38bdf8;">🩺 AI Veteriner &amp; Etolog Analizi (Dr. Pati)</span>
+            <span class="ai-science-tag" id="gameOverScienceTag">🧬 Klinik Etoloji Uyarısı</span>
+          </div>
+          <p id="gameOverAiAnalysisText" style="font-size:0.85rem; color:#e2e8f0; line-height:1.48;">
+            Stres altındaki bir köpeğe yanlış beden diliyle yaklaşmak savunma mekanizmasını tetikler.
+          </p>
+        </div>
+      </div>
+
+      <button type="button" class="btn-restart-game" id="restartGameFromCh1Btn">
+        🔄 Tekrar Dene (Restart • 1. Bölümden Temiz Başlat)
+      </button>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       10. MEZUNİYET & DİJİTAL SERTİFİKA MODALI
+       ======================================================================== -->
+  <div class="modal-backdrop" id="certificateModalBackdrop" role="dialog" aria-modal="true" aria-labelledby="certModalTitle">
+    <div class="certificate-modal">
+      <h2 id="certModalTitle" style="font-size:1.35rem; color:#fde68a; font-weight:800;">
+        🎓 Tebrikler! PATİ-KOD Güvenli İletişim ve Empati Elçisi Oldun!
+      </h2>
+      <p style="font-size:0.86rem; color:#cbd5e1; margin-top:4px;">
+        Hem görünmez önyargıyı kırdın hem de sokak hayvanlarıyla güvenli iletişimin tüm bilimsel kurallarını tamamladın.
+      </p>
+
+      <canvas id="certificateCanvas" class="cert-canvas-preview" width="880" height="470"></canvas>
+
+      <div style="display:flex; justify-content:center; gap:12px; flex-wrap:wrap; margin-top:14px;">
+        <button type="button" class="btn-fullscreen" id="downloadCertPngBtn" style="border:none;">
+          🖼️ Dijital Sertifikayı İndir (.PNG)
+        </button>
+        <button type="button" class="btn-icon-toggle" id="closeCertModalBtn">
+          ✖ Kapat ve Oyuna Dön
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       11. JAVASCRIPT MODÜLLERİ
+       ======================================================================== -->
+  <script src="js/embedded-images.js"></script>
+  <script src="js/illustrations.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/game.js"></script>
+</body>
+</html>
